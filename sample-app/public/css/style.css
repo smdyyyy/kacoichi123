@@ -34,6 +34,7 @@
 
 .card-img-top{
     position: relative;
+    height: 36rem;
 }
 
 .new-prefecture{
@@ -78,6 +79,7 @@
 
 .area-menu{
     margin: 10px;
+    width: 300px;
 }
 
 .prefecture-wrapper{
@@ -230,6 +232,11 @@
     position: relative;
 }
 
+.about-txt2 img{
+    width: 100%;
+    height: 350px;
+}
+
 .about-txt2 p{
     position: absolute;
     top: 12%;
@@ -244,6 +251,10 @@
 
 .howto p{
     line-height: 30px;
+}
+
+.howtoimg{
+    width: 16%;
 }
 
 .how-img{
@@ -305,4 +316,217 @@
     width:100%;
     height:250px;
     margin-top: 100px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .top-image img {
+        height: 400px;
+    }
+
+    .about-contents {
+        width: 80%;
+    }
+
+    .sight {
+        margin-right: 40px;
+    }
+
+    .view-text {
+        margin-right: 110px;
+    }
+
+    .rest-text {
+        margin-left: 40px;
+    }
+
+    .area-menu{
+        width: 250px;
+    }
+
+    .show-prefecture {
+        left: 8%;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    h2{
+        font-size: 1.2rem;
+    }
+    h5{
+        font-size: 0.1rem;
+    }
+    .card-title h5{
+        font-size: 1rem;
+    }
+    a{
+        font-size: 0.1rem;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-title a{
+        font-size: 1rem;
+    }
+
+    .card-prefecture{
+        font-size: 0.1rem;
+    }
+    .top-image img {
+        height: 200px;
+    }
+
+    .btn-group-lg>.btn, .btn-lg {
+        padding: .3rem 0.7rem;
+        font-size: 0.1rem;
+        line-height: 2;
+    }
+
+    .area-menus {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .card-body-r {
+        padding: 0rem;
+    }
+    
+    .card-img-r{
+        height: 90%;
+    }
+    
+    .pt-1-r{
+        padding-top: 0.5rem;
+    }
+
+    .prefecture-wrapper{
+        font-size: 0.1rem;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: left;
+    }
+
+    .show-prefecture{
+        left: 3%;
+    }
+
+    .about-txt{
+        font-size: 0.1rem;
+    }
+
+    .new-wrapper{
+        box-sizing: border-box;
+    }
+
+    .show-img{
+        width: 100%;
+    }
+
+    .content-text{
+        width: 100%;
+    }
+
+    .card-img-top{
+        height: 14rem;
+    }
+
+    #gmap{
+        width: 100%;
+    }
+
+    .bg-black{
+        left: 33%;
+    }
+
+    .carousel-item img {
+        height: 60px;
+    }
+
+    .footer-copyright{
+        font-size: 0.1rem;
+    }
+
+    .about-contents{
+        width: 100%;
+        font-size: 0.2rem;
+    }
+
+    .about-txt2 img {
+        height: 100%;
+    }
+
+    .about-txt2 p{
+        line-height: 20px;
+        left: 44%;
+    }
+    .text-finish {
+        line-height: 25px;
+    }
+
+    .how-img {
+        padding: 0 5px;
+    }
+
+    .how-img img{
+        width: 80%;
+    }
+    .ml-6 {
+        margin-left: 10px;
+    }
+
+    .three-contents-img {
+        width: 170px;
+    }
+
+    .view-text {
+        margin-right: 40px;
+    }
+
+    .text-height {
+        line-height: 25px;
+    }
+
+    .rest-text {
+        margin-left: 10px;
+    }
+
+    .mr-6 {
+        margin-right: 10px;
+    }
+
+    .pt-45 {
+        padding-top: 1rem;
+    }
+
+    .sight {
+        margin-right: 10px;
+    }
+
+    .text-finish {
+        line-height: 20px;
+    }
+
+    .my-45-r{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .user-name-r{
+        font-size: 15px;
+    }
+
+    .pad-b{
+        padding-bottom: 0;
+    }
+
+    .my-5-r{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .post-create {
+        width: 90%;
+        margin: 20px auto 80px auto;
+    }
 }

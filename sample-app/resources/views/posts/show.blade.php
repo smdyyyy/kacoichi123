@@ -5,7 +5,7 @@
 <div class="new-wrapper py-4 show-wrapper">
             <div class="new-post pb-4">
             <div class="new-content">
-                <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top show-img" alt="..." style= "height: 36rem;">
+                <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top show-img" alt="...">
                 <a href="#" class="btn btn-primary show-prefecture">{{ $post->prefecture->prefecture_name }}</a>
                 <div class="content-text content-center">
                     <div class="card-flex border-bottom">
@@ -17,7 +17,7 @@
                     <div class="new-text">
                         <p class="card-text py-2">{{ $post->created_at }}</br>{{ $post->adress }}</p>
                         <h4 class="card-text ">{{ $post->content }}</h4>
-                        <div id="gmap"></div>
+                        <div id="gmap" class="google-map"></div>
                         <div class="bg-user">
                             <h5 class="card-text bg-black">投稿者</h5>
                             <h2 class="card-title bg-user-name">{{ $post->user->name }}</h5>

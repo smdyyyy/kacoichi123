@@ -12,7 +12,7 @@
             <img src="/asset/image/aboutkacoichi.png" alt="" class="py-4">
 
             <div class="about-txt2">
-                <img src="/asset/image/about.jpeg" alt="" style="width:100%; height:350px">
+                <img src="/asset/image/about.png" alt="">
                 <p>みなさんの過去一番の体験は何ですか？</br>
                     カコイチはそんなみなさんの過去一番が</br>
                     集められたサイトです。</br>
@@ -27,7 +27,7 @@
         </div>
         <div class="how my-4">
             <div class="howto py-4">
-                <img src="/asset/image/howtouse.png" alt=""  class="pt-4" style="width: 16%;">
+                <img src="/asset/image/howtouse.png" alt=""  class="pt-4" class="howtoimg">
                 <h5 class="py-4 text-finish">あなたのカコイチを3つのカテゴリに分けて投稿してください。</br>
                     投稿されたカコイチはカテゴリ別、都道府県別に</br>
                     表示する事が出来ます。</h5>
@@ -104,7 +104,7 @@
                     毎日をカコイチと言えるように。
                     </h5>
                 </div>
-                <a href="{{ route('posts.index') }}" type="button" class="btn btn-primary btn-lg my-45">トップへ戻る</a>
+                <a href="{{ route('posts.index') }}" type="button" class="btn btn-primary btn-lg my-45 my-45-r">トップへ戻る</a>
             </div>
         </div>
     </div>    

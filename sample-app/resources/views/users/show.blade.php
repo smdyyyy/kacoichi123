@@ -15,7 +15,7 @@
                   <div class="card-body1">
                       <h5 class="card-title"><a href="{{ route('posts.index',['category_id' => $post->category->id]) }}">{{ $post->category->category_name }}:</a>{{ $post->title }}
                       </h5>
-                      <h5 class="">{{ $post->user->name }}</h5>
+                      <h5 class="user-name-r">{{ $post->user->name }}</h5>
                   </div>
                 <div class="card-flex2">
                     <a href="{{ action('UserController@edit',$post->id) }}" class="delete-btn btn btn-primary">編集する</a>
@@ -31,7 +31,7 @@
         @endforeach      
     </div>
     <div class="center">
-        <a href="{{ route('posts.index') }}" class="btn btn-primary my-5">戻る</a>
+        <a href="{{ route('posts.index') }}" class="btn btn-primary my-5-r">戻る</a>
     </div>
 </div>
 @endsection
