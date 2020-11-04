@@ -38,7 +38,7 @@
 
         <div class="area-menus">
             <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 71]) }}">
+            <a href="{{ route('posts.index',['prefecture_id' => 8]) }}">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="asset/image/tokyo.jpg" class="card-img" alt="...">
@@ -52,7 +52,7 @@
             </a>
             </div>
             <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 261]) }}">
+            <a href="{{ route('posts.index',['prefecture_id' => 27]) }}">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="asset/image/osaka.jpg" class="card-img" alt="...">
@@ -66,7 +66,7 @@
             </a>
             </div>
             <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 391]) }}">
+            <a href="{{ route('posts.index',['prefecture_id' => 40]) }}">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="asset/image/fukuoka.jpg" class="card-img" alt="...">
@@ -82,7 +82,7 @@
         </div>
         <div class="area-menus">
             <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 221]) }}">
+            <a href="{{ route('posts.index',['prefecture_id' => 23]) }}">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="asset/image/aichi.jpg" class="card-img" alt="...">
@@ -96,7 +96,7 @@
             </a>
             </div>
             <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 441]) }}">
+            <a href="{{ route('posts.index',['prefecture_id' => 45]) }}">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="asset/image/miyazaki.jpg" class="card-img card-img-r" alt="...">
@@ -110,7 +110,7 @@
             </a>
             </div>
             <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 461]) }}">
+            <a href="{{ route('posts.index',['prefecture_id' => 47]) }}">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="asset/image/okinawa.jpg" class="card-img" alt="...">
@@ -130,71 +130,71 @@
                 <div class="prefecture pb-4">
                     <p>北海道・東北</p>
                     <a href="{{ route('posts.index',['prefecture_id' => 1]) }}">北海道</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 11]) }}">青森</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 31]) }}">秋田</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 41]) }}">山形</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 21]) }}">岩手</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 51]) }}">宮城</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 61]) }}">福島</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 2]) }}">青森</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 4]) }}">秋田</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 5]) }}">山形</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 3]) }}">岩手</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 6]) }}">宮城</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 7]) }}">福島</a>
                 </div>
                 <div class="prefecture pb-4">
                     <p>関西</p>
-                    <a href="{{ route('posts.index',['prefecture_id' => 261]) }}">大阪</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 251]) }}">京都</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 291]) }}">兵庫</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 271]) }}">奈良</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 281]) }}">和歌山</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 241]) }}">滋賀</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 27]) }}">大阪</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 26]) }}">京都</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 30]) }}">兵庫</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 28]) }}">奈良</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 29]) }}">和歌山</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 25]) }}">滋賀</a>
                 </div>
             </div>
             <div class="prefectures">
                 <div class="prefecture pb-4">
                     <p>関東</p>
-                    <a href="{{ route('posts.index',['prefecture_id' => 71]) }}">東京</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 81]) }}">神奈川</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 91]) }}">埼玉</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 101]) }}">千葉</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 111]) }}">栃木</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 121]) }}">茨城</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 131]) }}">群馬</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 8]) }}">東京</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 9]) }}">神奈川</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 10]) }}">埼玉</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 11]) }}">千葉</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 12]) }}">栃木</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 13]) }}">茨城</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 14]) }}">群馬</a>
                 </div>
                 <div class="prefecture pb-4">
                     <p>中国・四国</p>
-                    <a href="{{ route('posts.index',['prefecture_id' => 341]) }}">岡山</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 351]) }}">広島</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 361]) }}">鳥取</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 371]) }}">島根</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 381]) }}">山口</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 311]) }}">香川</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 321]) }}">高知</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 331]) }}">愛媛</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 301]) }}">徳島</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 35]) }}">岡山</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 36]) }}">広島</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 37]) }}">鳥取</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 38]) }}">島根</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 39]) }}">山口</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 32]) }}">香川</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 33]) }}">高知</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 34]) }}">愛媛</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 31]) }}">徳島</a>
                 </div>
             </div>
             <div class="prefectures">
                 <div class="prefecture pb-4">
                     <p>中部</p>
-                    <a href="{{ route('posts.index',['prefecture_id' => 221]) }}">愛知</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 191]) }}">岐阜</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 141]) }}">静岡</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 231]) }}">三重</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 161]) }}">新潟</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 151]) }}">山梨</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 171]) }}">長野</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 201]) }}">石川</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 181]) }}">富山</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 211]) }}">福井</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 23]) }}">愛知</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 20]) }}">岐阜</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 15]) }}">静岡</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 24]) }}">三重</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 17]) }}">新潟</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 16]) }}">山梨</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 18]) }}">長野</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 21]) }}">石川</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 19]) }}">富山</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 22]) }}">福井</a>
                 </div>
                 <div class="prefecture">
                     <p>九州・沖縄</p>
-                    <a href="{{ route('posts.index',['prefecture_id' => 391]) }}">福岡</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 411]) }}">佐賀</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 421]) }}">長崎</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 401]) }}">大分</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 431]) }}">熊本</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 441]) }}">宮崎</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 451]) }}">鹿児島</a>
-                    <a href="{{ route('posts.index',['prefecture_id' => 461]) }}">沖縄</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 40]) }}">福岡</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 42]) }}">佐賀</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 43]) }}">長崎</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 41]) }}">大分</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 44]) }}">熊本</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 45]) }}">宮崎</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 46]) }}">鹿児島</a>
+                    <a href="{{ route('posts.index',['prefecture_id' => 47]) }}">沖縄</a>
                 </div>
             </div>
         </div>
