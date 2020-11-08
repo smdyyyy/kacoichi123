@@ -34,7 +34,6 @@ jobs:
             - ./vendor
  
       - run: echo "APP_KEY=" > .env.testing
-      - run: sudo php artisan key:generate
       - run: php artisan migrate
  
       - run: ./vendor/bin/phpunit
