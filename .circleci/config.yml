@@ -29,12 +29,12 @@ jobs:
       - run: composer install -n --prefer-dist --working-dir=./kacoichi
  
       - save_cache:
-          key: v1-dependencies-{{ checksum "composer.json" }}
+          key: v1-dependencies-{{ checksum "kacoichi/composer.json" }}
           paths:
             - ./vendor
  
       - run: echo "APP_KEY=" > .env.testing
-      - run: php artisan key:generate
+      - run: php artisan key:generate --env=testing
       - run: php artisan migrate
  
       - run: ./vendor/bin/phpunit
