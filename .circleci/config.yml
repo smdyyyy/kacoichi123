@@ -26,7 +26,7 @@ jobs:
             - v1-dependencies-{{ checksum "kacoichi/composer.json" }}
             - v1-dependencies-
  
-      - run: composer install -n --prefer-dist
+      - run: composer install -n --prefer-dist --working-dir=./kacoichi
  
       - save_cache:
           key: v1-dependencies-{{ checksum "kacoichi/composer.json" }}
