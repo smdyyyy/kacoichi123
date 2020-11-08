@@ -26,7 +26,7 @@ jobs:
             - v1-dependencies-{{ checksum "kacoichi/composer.json" }}
             - v1-dependencies-
  
-      - run: composer install -n --prefer-dist --working-dir=./kacoichi
+      - run: composer install -n --prefer-dist --working-dir=./kacoichi123
  
       - save_cache:
           key: v1-dependencies-{{ checksum "kacoichi/composer.json" }}
@@ -34,7 +34,7 @@ jobs:
             - ./vendor
  
       - run: echo "APP_KEY=" > .env.testing
-      - run: php artisan key:generate --env=testing
-      - run: php artisan migrate --env=testing
+      - run: php artisan key:generate
+      - run: php artisan migrate
  
       - run: ./vendor/bin/phpunit
