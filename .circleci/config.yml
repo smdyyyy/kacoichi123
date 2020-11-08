@@ -36,7 +36,7 @@ jobs:
       - run: echo "APP_KEY=" > .env.testing
       - run: php ./kacoichi/artisan key:generate --env=testing
       - run: php ./kacoichi/artisan --env=testing
-      - run: php ./kacoichi/artisan db:seed --class=CategoriesTableSeeder --env=testing
-      - run: php ./kacoichi/artisan db:seed --class=PrefecturesTableSeeder --env=testing
- 
+      - run: php ./kacoichi/artisan db:seed --class=PrefecturesTableSeeder
+      - run: php ./kacoichi/artisan db:seed --class=CategoriesTableSeeder
+      
       - run: ./kacoichi/vendor/bin/phpunit
