@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/php:7.4-node-browsers
+      - image: circleci/php:latest
         environment:
           - APP_DEBUG: true
           - APP_ENV: testing
@@ -26,9 +26,7 @@ jobs:
             - v1-dependencies-{{ checksum "kacoichi/composer.json" }}
             - v1-dependencies-
  
-      - run:
-          working_directory: kacoichi
-          composer install -n --prefer-dist
+      - run: composer install -n --prefer-dist
  
       - save_cache:
           key: v1-dependencies-{{ checksum "composer.json" }}
