@@ -13,7 +13,7 @@
 
 Auth::routes();
 Route::get('/','PostController@index')->name('posts.index');
+Route::get('/about','AboutController@index')->name('about.index');
 
-Route::resource('/about','AboutController')->only('index');
-Route::resource('/posts','PostController')->only(['show','create','store']);
-Route::resource('/users','UserController')->only(['show','edit','update','destroy']);
+Route::resource('/posts','PostController')->only(['show','create','store'])->middleware('auth');
+Route::resource('/users','UserController')->only(['show','edit','update','destroy'])->middleware('auth');
