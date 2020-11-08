@@ -29,7 +29,7 @@ jobs:
       - run: composer install -n --prefer-dist --working-dir=./kacoichi
  
       - save_cache:
-          key: v1-dependencies-{{ checksum "kacoichi/composer.json" }}
+          key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
  
