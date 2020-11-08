@@ -8,7 +8,7 @@ jobs:
           - APP_ENV: testing
           - DB_CONNECTION: circle_testing
           - DB_DATABASE: test_sample01
-          - DB_USERNAME: roo
+          - DB_USERNAME: root
  
       - image: circleci/mysql:5.7-ram
         environment:
@@ -20,7 +20,6 @@ jobs:
  
       - run: sudo apt update
       - run: sudo docker-php-ext-install pdo_mysql
-      - run: sudo composer self-update
  
       - restore_cache:
           keys:
