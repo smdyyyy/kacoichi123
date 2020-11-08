@@ -35,4 +35,4 @@ jobs:
  
       - run: echo "APP_KEY=" > .env.testing
  
-      - run: ./vendor/bin/phpunit
+      - run: ./kacoichi/vendor/bin/phpunit
