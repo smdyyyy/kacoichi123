@@ -34,6 +34,6 @@ jobs:
             - ./vendor
  
       - run: echo "APP_KEY=" > .env.testing
-      - run: php artisan migrate --path=kacoichi
+      - run: php artisan migrate --path="/kacoichi"
  
       - run: ./vendor/bin/phpunit
