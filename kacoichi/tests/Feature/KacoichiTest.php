@@ -14,10 +14,10 @@ class PostTest extends TestCase
 
     public function testHttp()
     {
-        //ホーム画面
+/*         //ホーム画面
         $home = $this->get('/');
         $home->assertStatus(200);
-
+ */
         //新規登録画面
         $register = $this->get('/register');
         $register->assertStatus(200);
@@ -37,10 +37,10 @@ class PostTest extends TestCase
 
     public function testBody()
     {
-        //ホーム画面に一致するテキストがあるか
+/*         //ホーム画面に一致するテキストがあるか
         $home = $this->get('/');
         $home->assertSeeText('週末になるとつい立ち寄ってしまうお気に入りのバー');
-
+ */
         //新規登録画面に一致するテキストがあるか
         $register = $this->get('/register');
         $register->assertSeeText('新規登録');
@@ -54,7 +54,7 @@ class PostTest extends TestCase
         $about->assertSeeText('カコイチはそんなみなさんの過去一番が');
     }
 
-        public function testMypage_Posts()
+/*         public function testMypage_Posts()
     {
         //ユーザー作成
         $user = factory(User::class)->create([
@@ -99,4 +99,4 @@ class PostTest extends TestCase
         //ホームにリダイレクト
         $logout->assertRedirect('/');
     }
-}
+ */}
