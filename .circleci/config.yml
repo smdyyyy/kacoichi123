@@ -18,8 +18,6 @@ jobs:
     steps:
       - checkout
       
-      - run: wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && sudo tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
- 
       - run: sudo apt update
       - run: sudo docker-php-ext-install pdo_mysql
  
@@ -37,6 +35,7 @@ jobs:
  
       - run: echo "APP_KEY=" > .env.testing
       - run: php ./kacoichi/artisan key:generate --env=testing
+      - run: touch storage/testing.mysql
       - run: php ./kacoichi/artisan migrate --env=testing
       - run: php ./kacoichi/artisan db:seed
       
