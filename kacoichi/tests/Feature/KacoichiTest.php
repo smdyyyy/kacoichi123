@@ -14,10 +14,10 @@ class PostTest extends TestCase
 
     public function testHttp()
     {
-/*         //ホーム画面
+        //ホーム画面
         $home = $this->get('/');
         $home->assertStatus(200);
- */
+
         //新規登録画面
         $register = $this->get('/register');
         $register->assertStatus(200);
@@ -35,7 +35,7 @@ class PostTest extends TestCase
         $create->assertStatus(302);
     }
 
-/*     public function testBody()
+    public function testBody()
     {
         //ホーム画面に一致するテキストがあるか
         $home = $this->get('/');
@@ -99,4 +99,4 @@ class PostTest extends TestCase
         //ホームにリダイレクト
         $logout->assertRedirect('/');
     }
- */}
+}
