@@ -20,9 +20,6 @@ jobs:
       
       - run: sudo apt update
       - run: sudo docker-php-ext-install pdo_mysql
-      - run: docker-compose build
-      - run: docker-compose up -d
-      - run: docker-compose run app composer install
  
       - restore_cache:
           keys:
@@ -30,6 +27,9 @@ jobs:
             - v1-dependencies-
  
       - run: composer install -n --prefer-dist --working-dir=./kacoichi/
+      - run: docker-compose build
+      - run: docker-compose up -d
+      - run: docker-compose run app composer install
  
       - save_cache:
           key: v1-dependencies-{{ checksum "kacoichi/composer.json" }}
