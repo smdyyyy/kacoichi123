@@ -35,5 +35,6 @@ jobs:
  
       - run: echo "APP_KEY=" > .env.testing
       - run: php ./kacoichi/artisan key:generate --env=testing
+
       
-      - run: kacoichi/vendor/bin/phpunit
+      - run: php ./kacoichi/vendor/bin/phpunit --configuration=./kacoichi/phpunit.xml
