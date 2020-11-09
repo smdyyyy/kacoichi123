@@ -35,9 +35,8 @@ jobs:
  
       - run: echo "APP_KEY=" > .env.testing
       - run: php ./kacoichi/artisan key:generate --env=testing
-      - run: touch storage/testing.mysql
       
-      - run: php ./kacoichi/artisan migrate --env=testing
+      - run: docker-compose exec workspace php ./kacoichi/artisan migrate --env=testing
       - run: php ./kacoichi/artisan db:seed
       
       - run: php ./kacoichi/vendor/bin/phpunit --configuration=./kacoichi/phpunit.xml
