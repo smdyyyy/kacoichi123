@@ -3,17 +3,15 @@ jobs:
   build:
     docker:
       - image: circleci/php:7.4-node-browsers
+      - image: circleci/mysql:5.7-ram
         environment:
           - APP_DEBUG: true
           - APP_ENV: testing
+          - APP_KEY: base64:JVelB1XL1fDUwvjCrRw7Kx1Rkt+kcMRo0DjcQu2s04o=
           - DB_CONNECTION: circle_testing
           - DB_DATABASE: test_sample01
           - DB_USERNAME: root
- 
-      - image: circleci/mysql:5.7-ram
-        environment:
           - MYSQL_ALLOW_EMPTY_PASSWORD: true
-          - MYSQL_DATABASE: test_sample01
  
     steps:
       - checkout
@@ -27,9 +25,6 @@ jobs:
             - v1-dependencies-
  
       - run: composer install -n --prefer-dist --working-dir=./kacoichi/
-      - run: docker-compose build
-      - run: docker-compose up -d
-      - run: docker-compose run app composer install
  
       - save_cache:
           key: v1-dependencies-{{ checksum "kacoichi/composer.json" }}
@@ -39,7 +34,7 @@ jobs:
       - run: echo "APP_KEY=" > .env.testing
       - run: php ./kacoichi/artisan key:generate --env=testing
       
-      - run: docker-compose run app php ./kacoichi/artisan migrate --env=testing
-      - run: docker-compose run app php ./kacoichi/artisan db:seed --env=testing
+      - run: php ./kacoichi/artisan migrate --env=testing
+      - run: php ./kacoichi/artisan db:seed
       
       - run: php ./kacoichi/vendor/bin/phpunit --configuration=./kacoichi/phpunit.xml
