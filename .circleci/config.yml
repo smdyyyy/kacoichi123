@@ -28,7 +28,7 @@ jobs:
       - save_cache:
           key: v1-dependencies-{{ checksum "kacoichi/composer.json" }}
           paths:
-            - ./vendor
+            - ./kacoichi/vendor
  
       - run: echo "APP_KEY=" > .env.testing
       - run: php ./kacoichi/artisan key:generate --env=testing
