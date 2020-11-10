@@ -17,8 +17,8 @@
         <div class="new-post pb-4">
             @foreach($posts as $post)
                 <a href="{{ route('posts.show',$post->id) }}">
-                    <div class="card new-content" style="width: 18rem;">
-                            <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top" alt="..." style="height: 12rem;">
+                    <div class="card new-content content-size">
+                            <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top" alt="...">
 <!--                         <img src="{{ asset('storage/image/'.$post->image) }}" class="card-img-top" alt="..." style="height: 12rem;">
  -->                        <a href="{{ route('posts.index',['prefecture_id' => $post->prefecture->id]) }}" class="btn-prefecture btn-primary new-prefecture">{{ $post->prefecture->prefecture_name }}</a>
                             <div class="card-body">
@@ -35,95 +35,96 @@
 
     <div class="area-wrapper">
         <h2 class="py-4">エリアから探す</h2>
-
-        <div class="area-menus">
-            <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 8]) }}">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="asset/image/tokyo.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body card-body-r">
-                            <h5 class="card-title card-prefecture pt-1-r">東京</h5>
+            <div class="areas-menus">
+                <div class="area-menus">
+                    <div class="card area-menu">
+                    <a href="{{ route('posts.index',['prefecture_id' => 8]) }}">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="asset/image/tokyo.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-body-r">
+                                    <h5 class="card-title card-prefecture pt-1-r">東京</h5>
+                                </div>
+                            </div>
                         </div>
+                    </a>
+                    </div>
+                    <div class="card area-menu">
+                    <a href="{{ route('posts.index',['prefecture_id' => 27]) }}">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="asset/image/osaka.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-body-r">
+                                    <h5 class="card-title card-prefecture pt-1-r">大阪</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card area-menu">
+                    <a href="{{ route('posts.index',['prefecture_id' => 40]) }}">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="asset/image/fukuoka.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-body-r">
+                                    <h5 class="card-title card-prefecture pt-1-r">福岡</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                     </div>
                 </div>
-            </a>
-            </div>
-            <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 27]) }}">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="asset/image/osaka.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body card-body-r">
-                            <h5 class="card-title card-prefecture pt-1-r">大阪</h5>
+                <div class="area-menus">
+                    <div class="card area-menu">
+                    <a href="{{ route('posts.index',['prefecture_id' => 23]) }}">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="asset/image/aichi.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-body-r">
+                                    <h5 class="card-title card-prefecture pt-1-r">愛知</h5>
+                                </div>
+                            </div>
                         </div>
+                    </a>
+                    </div>
+                    <div class="card area-menu">
+                    <a href="{{ route('posts.index',['prefecture_id' => 45]) }}">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="asset/image/miyazaki.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-body-r">
+                                    <h5 class="card-title card-prefecture pt-1-r">宮崎</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card area-menu">
+                    <a href="{{ route('posts.index',['prefecture_id' => 47]) }}">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="asset/image/okinawa.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-body-r">
+                                    <h5 class="card-title card-prefecture pt-1-r">沖縄</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                     </div>
                 </div>
-            </a>
             </div>
-            <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 40]) }}">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="asset/image/fukuoka.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body card-body-r">
-                            <h5 class="card-title card-prefecture pt-1-r">福岡</h5>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            </div>
-        </div>
-        <div class="area-menus">
-            <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 23]) }}">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="asset/image/aichi.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body card-body-r">
-                            <h5 class="card-title card-prefecture pt-1-r">愛知</h5>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            </div>
-            <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 45]) }}">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="asset/image/miyazaki.jpg" class="card-img card-img-r" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body card-body-r">
-                            <h5 class="card-title card-prefecture">宮崎</h5>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            </div>
-            <div class="card area-menu">
-            <a href="{{ route('posts.index',['prefecture_id' => 47]) }}">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="asset/image/okinawa.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body card-body-r">
-                            <h5 class="card-title card-prefecture pt-1-r">沖縄</h5>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            </div>
-        </div>
 
         <div class="prefecture-wrapper py-4">
             <div class="prefectures">
@@ -201,7 +202,7 @@
     </div>
 
     <div class="about-wrapper py-4">
-        <h5 class="py-4">当サイト「<strong>カコイチ</strong>」は、あなたの過去一番を投稿するサイトです。</h5>
+        <p class="py-4">当サイト「<strong>カコイチ</strong>」は、あなたの過去一番を投稿するサイトです。</p>
 
         <div class="about-txt">
             <p>

@@ -1,6 +1,6 @@
 .top-image img{
     width: 100%;
-    height: 600px;
+    height: 45rem;
 }
 .area-menus{
     display: flex;
@@ -32,9 +32,13 @@
     margin: 5px 5px;
 }
 
+.content-size{
+    width: 24rem;
+}
+
 .card-img-top{
     position: relative;
-    height: 36rem;
+    height: 16rem;
 }
 
 .new-prefecture{
@@ -79,7 +83,7 @@
 
 .area-menu{
     margin: 10px;
-    width: 300px;
+    width: 20rem;
 }
 
 .prefecture-wrapper{
@@ -90,19 +94,23 @@
 
 .prefectures{
     margin: 0 25px;
+    font-size: 1rem;
 }
 
 .about-wrapper{
     background-color: #FFF;
+    font-size: 1.3rem;
 }
 
 .card-img{
     height:100%;
+    width: 9rem;
 }
 
 .card-prefecture{
     text-align: center;
-    margin-top: 8px;
+    margin-top: 1.1rem;
+    padding-left: 2.5rem;
 }
 
 .card-text{
@@ -319,214 +327,159 @@
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width:992px) and (max-width:1200px){
+    .content-size {
+        width: 19rem;
+    }
+    .area-menu {
+        width: 16rem;
+    }
+    .card-img {
+        width: 8rem;
+    }
+
+    .card-prefecture {
+        padding-left: 3.3rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .carousel-item img {
+        height: 10rem;
+    }
     .top-image img {
-        height: 400px;
+        height: 27rem;
+    }
+    .content-size {
+        width: 15rem;
     }
 
-    .about-contents {
-        width: 80%;
+    .card-img-top {
+        height: 12rem;
     }
 
-    .sight {
-        margin-right: 40px;
+    .areas-menus{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .area-menus {
+        display: inline;
     }
 
-    .view-text {
-        margin-right: 110px;
-    }
-
-    .rest-text {
-        margin-left: 40px;
-    }
-
-    .area-menu{
-        width: 250px;
-    }
-
-    .show-prefecture {
-        left: 8%;
+    .area-menu {
+        width: 20rem;
     }
 }
 
 
-@media screen and (max-width: 480px){
-    h2{
-        font-size: 1.2rem;
-    }
-    h5{
-        font-size: 0.1rem;
-    }
-    .card-title h5{
-        font-size: 1rem;
-    }
-    a{
-        font-size: 0.1rem;
-    }
-    .card-title {
-        font-size: 1.2rem;
-    }
-    .card-title a{
-        font-size: 1rem;
-    }
-
-    .card-prefecture{
-        font-size: 0.1rem;
+@media screen and (min-width:544px) and (max-width:767px){
+    .carousel-item img {
+        height: 7rem;
     }
     .top-image img {
-        height: 200px;
+        height: 22rem;
+    }
+    .content-size {
+        width: 10rem;
+    }
+    .card-img-top {
+        height: 10rem;
+    }
+    .prefecture-wrapper {
+        display: block;
     }
 
-    .btn-group-lg>.btn, .btn-lg {
-        padding: .3rem 0.7rem;
-        font-size: 0.1rem;
-        line-height: 2;
+    .prefectures{
+        margin-left: 7rem;
     }
 
-    .area-menus {
-        justify-content: center;
+    .row{
         flex-wrap: nowrap;
     }
 
-    .card-body-r {
-        padding: 0rem;
+    .areas-menus{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
-    .card-img-r{
-        height: 90%;
-    }
-    
-    .pt-1-r{
-        padding-top: 0.5rem;
+    .area-menus {
+        display: inline;
     }
 
-    .prefecture-wrapper{
-        font-size: 0.1rem;
-        width: 70%;
-        margin: 0 auto;
+    .area-menu {
+        width: 15rem;
+    }
+
+    .card-prefecture {
+        padding-left: 0;
+    }
+
+    .prefecture-wrapper {
         justify-content: left;
     }
 
-    .show-prefecture{
-        left: 3%;
+    .about-wrapper {
+        font-size: 1rem;
     }
+}
 
-    .about-txt{
-        font-size: 0.1rem;
-    }
+    @media screen and (max-width:543px){
+        .carousel-item img {
+            height: 6rem;
+        }
+        .top-image img {
+            height: 16rem;
+        }
+        .content-size {
+            width: 10rem;
+        }
+        .card-img-top {
+            height: 10rem;
+        }
 
-    .new-wrapper{
-        box-sizing: border-box;
-    }
-
-    .show-img{
-        width: 100%;
-    }
-
-    .content-text{
-        width: 100%;
-    }
-
-    .card-img-top{
-        height: 14rem;
-    }
-
-    #gmap{
-        width: 100%;
-    }
-
-    .bg-black{
-        left: 33%;
-    }
-
-    .carousel-item img {
-        height: 60px;
-    }
-
-    .footer-copyright{
-        font-size: 0.1rem;
-    }
-
-    .about-contents{
-        width: 100%;
-        font-size: 0.2rem;
-    }
-
-    .about-txt2 img {
-        height: 100%;
-    }
-
-    .about-txt2 p{
-        line-height: 20px;
-        left: 44%;
-    }
-    .text-finish {
-        line-height: 25px;
-    }
-
-    .how-img {
-        padding: 0 5px;
-    }
-
-    .how-img img{
-        width: 80%;
-    }
-    .ml-6 {
-        margin-left: 10px;
-    }
-
-    .three-contents-img {
-        width: 170px;
-    }
-
-    .view-text {
-        margin-right: 40px;
-    }
-
-    .text-height {
-        line-height: 25px;
-    }
-
-    .rest-text {
-        margin-left: 10px;
-    }
-
-    .mr-6 {
-        margin-right: 10px;
-    }
-
-    .pt-45 {
-        padding-top: 1rem;
-    }
-
-    .sight {
-        margin-right: 10px;
-    }
-
-    .text-finish {
-        line-height: 20px;
-    }
-
-    .my-45-r{
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    }
-
-    .user-name-r{
-        font-size: 15px;
-    }
-
-    .pad-b{
-        padding-bottom: 0;
-    }
-
-    .my-5-r{
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
-
-    .post-create {
-        width: 90%;
-        margin: 20px auto 80px auto;
-    }
+        .card-img {
+            height: 100%;
+            width: 7rem;
+        }
+        .prefecture-wrapper {
+            display: block;
+        }
+    
+        .prefectures{
+            margin-left: 2rem;
+            font-size: 0.9rem;
+        }
+    
+        .row{
+            flex-wrap: nowrap;
+        }
+    
+        .areas-menus{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .area-menus {
+            display: inline;
+        }
+    
+        .area-menu {
+            width: 15rem;
+        }
+    
+        .card-prefecture {
+            padding-left: 0;
+        }
+    
+        .prefecture-wrapper {
+            justify-content: left;
+        }
+    
+        .about-wrapper {
+            font-size: 0.7rem;
+        }
 }
