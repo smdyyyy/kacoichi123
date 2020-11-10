@@ -14,6 +14,9 @@
 Auth::routes();
 Route::get('/','PostController@index')->name('posts.index');
 Route::get('/about','AboutController@index')->name('about.index');
+Route::resource('/posts','PostController');
 
-Route::resource('/posts','PostController')->only(['show','create','store'])->middleware('auth');
+Route::group(['middleware' => 'auth'], function() {
+Route::resource('/posts','PostController')->only(['create','store'])->middleware('auth');
 Route::resource('/users','UserController')->only(['show','edit','update','destroy'])->middleware('auth');
+});

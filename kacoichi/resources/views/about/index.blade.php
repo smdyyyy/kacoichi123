@@ -54,7 +54,7 @@
             <div class="three-contents">
                 <div class="view about-flex2 py-4">
                     <div class="view-img">
-                        <img src="/asset/image/ski.jpg" alt=""  class="three-contents-img py-4 ml-6">
+                        <img src="/asset/image/ski.jpg" alt=""  class="three-contents-img py-4 ml-6 ski">
                     </div>
                     <div class="view-text">
                         <img src="/asset/image/view.png" alt="" class="pt-45">

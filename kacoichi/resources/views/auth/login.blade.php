@@ -57,6 +57,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('ログイン') }}
                                 </button>
+                                <a class="btn btn-primary" href="{{ route('register') }}">{{ __('新規登録はこちら') }}</a>
                             </div>
                         </div>
                     </form>

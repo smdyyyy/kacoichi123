@@ -38,7 +38,7 @@
 
 .card-img-top{
     position: relative;
-    height: 16rem;
+    height: 12rem;
 }
 
 .new-prefecture{
@@ -222,7 +222,7 @@
 }
 
 .about-contents{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -233,7 +233,7 @@
 
 .about-flex2{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .about-txt2{
@@ -288,15 +288,15 @@
 }
 
 .ml-6{
-    margin-left: 80px;
+    margin-left: 110px;
 }
 
 .mr-6{
-    margin-right: 80px;
+    margin-right: 110px;
 }
 
 .view-text{
-    margin-right: 140px;
+    margin-right: 170px;
 }
 
 .rest-text{
@@ -305,6 +305,10 @@
 
 .sight{
     margin-right: 80px;
+}
+
+.sight-text{
+    margin-right: 30px;
 }
 
 .text-finish{
@@ -341,6 +345,19 @@
     .card-prefecture {
         padding-left: 3.3rem;
     }
+
+    .show-prefecture {
+        left: 17%;
+        top: 10%;
+    }
+
+    .view-text {
+        margin-right: 8rem;
+    }
+
+    .sight-text {
+        margin-right: 0;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:991px){
@@ -370,6 +387,59 @@
 
     .area-menu {
         width: 20rem;
+    }
+
+    .new-wrapper{
+        margin: 0 auto;
+    }
+
+    .show-img {
+        width: 40rem;
+    }
+
+    .content-text {
+        width: 40rem;
+    }
+
+    .bg-black {
+        left:40%;
+    }
+
+    .show-prefecture {
+        left: 20%;
+        top : 10%;
+    }
+
+    .about-contents{
+        width: 90%;
+    }
+
+    .ml-6 {
+        margin-left: 40px;
+    }
+
+    .mr-6 {
+        margin-right: 2.8rem;
+    }
+
+    .rest-text {
+        margin-left: 0rem;
+    }
+
+    .three-contents-img {
+        width: 17rem;
+    }
+
+    .sight {
+        margin-right: 0;
+    }
+
+    .view-text {
+        margin-right: 60px;
+    }
+
+    .text-height{
+        font-size: 1rem;
     }
 }
 
@@ -424,62 +494,356 @@
     .about-wrapper {
         font-size: 1rem;
     }
+
+    .show-img {
+        width: 30rem;
+    }
+
+    .content-text {
+        width: 30rem;
+    }
+
+    .bg-black {
+        left:40%;
+    }
+
+    .show-prefecture {
+        left: 20%;
+        top : 10%;
+    }
+
+    .about-contents{
+        width: 100%;
+    }
+
+    .about-txt2 p {
+        left: 46%;
+    }
+
+    .ml-6 {
+        margin-left: 40px;
+    }
+
+    .mr-6 {
+        margin-right: 2.0rem;
+    }
+
+    .rest-text {
+        margin-left: 0rem;
+    }
+
+    .three-contents-img {
+        width: 12rem;
+    }
+
+    .sight {
+        margin-right: 0;
+    }
+
+    .view-text {
+        margin-right: 60px;
+    }
+
+    .text-height{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .pt-45 {
+        padding-top: 1.2rem;
+    }
+
+    .sight-text {
+        margin-right: 0px;
+    }
 }
 
-    @media screen and (max-width:543px){
-        .carousel-item img {
-            height: 6rem;
-        }
-        .top-image img {
-            height: 16rem;
-        }
-        .content-size {
-            width: 10rem;
-        }
-        .card-img-top {
-            height: 10rem;
-        }
+@media screen and (min-width:450px) and (max-width:543px){
+    .carousel-item img {
+        height: 6rem;
+    }
+    .top-image img {
+        height: 16rem;
+    }
+    .content-size {
+        width: 10rem;
+    }
+    .card-img-top {
+        height: 10rem;
+    }
 
-        .card-img {
-            height: 100%;
-            width: 7rem;
-        }
-        .prefecture-wrapper {
-            display: block;
-        }
-    
-        .prefectures{
-            margin-left: 2rem;
-            font-size: 0.9rem;
-        }
-    
-        .row{
-            flex-wrap: nowrap;
-        }
-    
-        .areas-menus{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+    .card-img {
+        height: 100%;
+        width: 7rem;
+    }
+
+    .prefecture-wrapper {
+        display: block;
+    }
+
+    .prefectures{
+        margin-left: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .row{
+        flex-wrap: nowrap;
+    }
+
+    .areas-menus{
+        display: block;
         
-        .area-menus {
-            display: inline;
-        }
+    }
     
-        .area-menu {
-            width: 15rem;
-        }
+    .area-menus {
+        display: inline;
+    }
+
+    .area-menu {
+        width: 20rem;
+        margin: 5px auto;
+    }
+
+    .card-prefecture {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .prefecture-wrapper {
+        justify-content: left;
+    }
+
+    .about-wrapper {
+        font-size: 0.7rem;
+    }
+
+    .show-img {
+        width: 25rem;
+    }
+
+    .content-text {
+        width: 25rem;
+    }
+
+    .bg-black {
+        left:35%;
+    }
+
+    .show-prefecture {
+        left: 20%;
+        top : 10%;
+    }
+
+    .about-contents{
+        width: 100%;
+    }
+
+    .about-txt2 p {
+        left: 40%;
+    }
+
+    .ml-6 {
+        margin-left: 0;
+    }
+
+    .mr-6 {
+        margin-right: 0rem;
+    }
+
+    .rest-text {
+        margin-left: 0rem;
+    }
+
+    .three-contents-img {
+        width: 20rem;
+    }
+
+    .sight {
+        margin-right: 0;
+    }
+
+    .view-text {
+        margin-right: 4rem;
+        margin-left: 4.5rem;
+    }
+
+    .text-finish {
+        line-height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .text-height{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .pt-45 {
+        padding-top: 1.2rem;
+    }
+
+    .sight-text {
+        margin-right: 0px;
+    }
+
+    .how-img {
+        padding: 0 5px;
+    }
+
+    .about-flex2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .view-img{
+        order: 2;
+    }
+
+    .sight-img{
+        order: 2;
+    }
+}
+
+@media screen and (max-width:449px){
+    .carousel-item img {
+        height: 6rem;
+    }
+    .top-image img {
+        height: 16rem;
+    }
+    .content-size {
+        width: 10rem;
+    }
+    .card-img-top {
+        height: 10rem;
+    }
+
+    .card-img {
+        height: 100%;
+        width: 7rem;
+    }
+
+    .prefecture-wrapper {
+        display: block;
+    }
+
+    .prefectures{
+        margin-left: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .row{
+        flex-wrap: nowrap;
+    }
+
+    .areas-menus{
+        display: block;
+        
+    }
     
-        .card-prefecture {
-            padding-left: 0;
-        }
-    
-        .prefecture-wrapper {
-            justify-content: left;
-        }
-    
-        .about-wrapper {
-            font-size: 0.7rem;
-        }
+    .area-menus {
+        display: inline;
+    }
+
+    .area-menu {
+        width: 20rem;
+        margin: 5px auto;
+    }
+
+    .card-prefecture {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .prefecture-wrapper {
+        justify-content: left;
+    }
+
+    .about-wrapper {
+        font-size: 0.7rem;
+    }
+
+    .show-img {
+        width: 22rem;
+    }
+
+    .content-text {
+        width: 22rem;
+    }
+
+    .bg-black {
+        left:35%;
+    }
+
+    .show-prefecture {
+        left: 20%;
+        top : 10%;
+    }
+
+    .about-contents{
+        width: 100%;
+    }
+
+    .about-txt2 p {
+        left: 20%;
+    }
+
+    .ml-6 {
+        margin-left: 0;
+    }
+
+    .mr-6 {
+        margin-right: 0rem;
+    }
+
+    .rest-text {
+        margin-left: 0rem;
+    }
+
+    .three-contents-img {
+        width: 20rem;
+    }
+
+    .sight {
+        margin-right: 0;
+    }
+
+    .view-text {
+        margin-right: 4rem;
+        margin-left: 4.5rem;
+    }
+
+    .text-finish {
+        line-height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .text-height{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .pt-45 {
+        padding-top: 1.2rem;
+    }
+
+    .sight-text {
+        margin-right: 0px;
+    }
+
+    .how-img {
+        padding: 0 5px;
+    }
+
+    .about-flex2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .view-img{
+        order: 2;
+    }
+
+    .sight-img{
+        order: 2;
+    }
 }
