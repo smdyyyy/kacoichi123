@@ -30,9 +30,7 @@ jobs:
           paths:
             - ./kacoichi/vendor
  
-      - run: echo "APP_KEY=" > .env.testing
       - run: php ./kacoichi/artisan key:generate --env=testing
-      
       - run: php ./kacoichi/artisan migrate --env=testing
       - run: php ./kacoichi/artisan db:seed
       
