@@ -242,7 +242,7 @@
 
 .about-txt2 img{
     width: 100%;
-    height: 350px;
+    height: 27rem;
 }
 
 .about-txt2 p{
@@ -250,7 +250,8 @@
     top: 12%;
     left: 52%;
     color: white;
-    line-height: 30px;
+    line-height: 35px;
+    font-size: 1.2rem;
 }
 
 .how{
@@ -414,6 +415,12 @@
         width: 90%;
     }
 
+    .about-txt2 p{
+        left: 48%;
+        line-height: 35px;
+        font-size: 1.1rem;
+    }
+
     .ml-6 {
         margin-left: 40px;
     }
@@ -517,7 +524,8 @@
     }
 
     .about-txt2 p {
-        left: 46%;
+        left: 43%;
+        font-size: 1rem;
     }
 
     .ml-6 {
@@ -639,7 +647,8 @@
     }
 
     .about-txt2 p {
-        left: 40%;
+        left: 23%;
+        font-size: 1rem;
     }
 
     .ml-6 {
@@ -784,7 +793,8 @@
     }
 
     .about-txt2 p {
-        left: 20%;
+        font-size: 1rem;
+        left: 16%;
     }
 
     .ml-6 {

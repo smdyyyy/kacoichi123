@@ -16,7 +16,7 @@ class UserController extends Controller
     {
         //ユーザ情報取得
         $user = User::find($user->id);
-        //ユーザIDに一致した投稿を表示
+        //ユーザIDが一致した投稿を表示
         $posts = Post::All()->where('user_id', $user->id);
 
         return view('users.show', ['user' => $user,'posts' => $posts,]);
