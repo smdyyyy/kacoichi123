@@ -60,9 +60,13 @@ class UserController extends Controller
         $post->category_id = $request->category_id;
         //都道府県ID
         $post->prefecture_id = $request->prefecture_id;
-        //画像をbase64にエンコード
-        $post->image = base64_encode(file_get_contents($request->image->getRealPath()));
 
+        $image = $request->file('image');
+        $path = Storage::disk('s3')->putFile('/', $image, 'public');
+        $post->image = Storage::disk('s3')->url($path);
+
+        //画像をbase64にエンコード
+        //$post->image = base64_encode(file_get_contents($request->image->getRealPath()));
         //heroku非対応
         //$filename = $request->file('image')->store('public/image');
         //$post->image = basename($filename);

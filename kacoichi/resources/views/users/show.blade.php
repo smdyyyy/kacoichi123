@@ -10,7 +10,8 @@
         @foreach($posts as $post)
           <a href="{{ route('posts.show',$post->id) }}">
               <div class="card new-content" style="width: 18rem;">
-                  <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top" alt="..." style="height: 12rem;">
+                    <img src="{{ $post->image }}" class="card-img-top">
+                  <!-- <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top" alt="..." style="height: 12rem;"> -->
                   <a href="{{ route('posts.index',['prefecture_id' => $post->prefecture->id]) }}" class="btn-prefecture btn-primary new-prefecture">{{ $post->prefecture->prefecture_name }}</a>
                   <div class="card-body1">
                       <h5 class="card-title"><a href="{{ route('posts.index',['category_id' => $post->category->id]) }}">{{ $post->category->category_name }}:</a>{{ $post->title }}
