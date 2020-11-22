@@ -80,8 +80,6 @@ class PostController extends Controller
 
         //画像をリサイズ
         $image = Image::make($request->file('image'))->resize(640,480);
-        $image->save();
-
 
         //S3に画像を保存
         $path = Storage::disk('s3')->putFile('/', $image, 'public');
