@@ -79,13 +79,18 @@ class PostController extends Controller
         $post->prefecture_id = $request->prefecture_id;
 
         
-        $image = $request->file('image');
-        $image_name = time();
+        if ($request['image']) {
+            $file = $request->file('image');
+            $name = $file->getClientOriginalName();
 
-        $image_path = storage_path('public/'.$image_name);
-        Image::make($image)->resize(640,480)->save($image_path);
-        $post->image = storage_path('public/'.$image_name);
-        Storage::disk('s3')->putFileAs('/', $post->image, $image_name, 'public');
+            // 画像を横幅300px・縦幅アスペクト比維持の自動サイズへリサイズ
+            $image = Image::make($file)
+                ->resize(640, null, function ($constraint) {
+                    $constraint->aspectRatio();
+            });
+        }
+        
+        Storage::put(config('filesystems.s3.url').$name, (string) $image->encode());
 
         //S3に画像を保存
         //$path = Storage::disk('s3')->putFile('/', $image, 'public');
