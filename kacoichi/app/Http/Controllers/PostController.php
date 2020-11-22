@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
 use Illuminate\Support\Facades\Auth;
-use InterventionImage;
 use App\Post;
 use App\Prefecture;
 use App\Category;
 use Storage;
+use Intervention\Image\Facades\Image;
 
 class PostController extends Controller
 {
