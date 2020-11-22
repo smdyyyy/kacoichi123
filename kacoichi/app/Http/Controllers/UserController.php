@@ -69,7 +69,7 @@ class UserController extends Controller
         $resize_image = Image::make($image)->resize(640,480);
 
         //S3に画像を保存
-        $path = Storage::disk('s3')->putFile('/', $resize_image, 'public');
+        $path = Storage::disk('s3')->putFile('/', (string)$resize_image, 'public');
         $post->image = Storage::disk('s3')->url($path);
 
         //画像をbase64にエンコード
