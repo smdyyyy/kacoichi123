@@ -35,7 +35,7 @@ class PostController extends Controller
         //降順に一覧表示
         else{
             $posts = Post::latest()->paginate(12);
-            return view('posts.index',['posts'=>$posts,'user'=>$user]);
+            return view('posts.index',['posts'=>$posts,'user'=>$user,]);
         }
     }
 
@@ -80,17 +80,17 @@ class PostController extends Controller
         
 
         // formから送信されたimgファイルを読み込む
-        $post->image = $request->file('image');
+        $file = $request->file('image');
         // 画像の拡張子を取得
         $extension = $request->file('image')->getClientOriginalExtension();
         // 画像の名前を取得
         $filename = $request->file('image')->getClientOriginalName();
         // 画像をリサイズ
-        $resize_img = Image::make($post->image)->resize(640, 480)->encode($extension);
+        $resize_img = Image::make($file)->resize(640, 480)->encode($extension);
         // s3のuploadsファイルに追加
         $path = Storage::disk('s3')->put('/image/'.$filename,(string)$resize_img, 'public');
         // 画像のURLを参照
-        $url = Storage::disk('s3')->url('image/'.$filename);
+        $post->image = Storage::disk('s3')->url('image/'.$filename);
 
         //S3に画像を保存
         //$path = Storage::disk('s3')->putFile('/', $image, 'public');
