@@ -9,7 +9,7 @@ use App\Post;
 use App\Prefecture;
 use App\Category;
 use Storage;
-use Intervention\Image\Facades\Image;
+use Image;
 
 class PostController extends Controller
 {

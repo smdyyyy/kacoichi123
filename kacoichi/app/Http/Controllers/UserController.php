@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use App\Post;
 use Storage;
-use Intervention\Image\Facades\Image;
+use Image;
 
 class UserController extends Controller
 {
