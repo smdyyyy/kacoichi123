@@ -79,7 +79,7 @@ class PostController extends Controller
         $post->prefecture_id = $request->prefecture_id;
 
         //画像をリサイズ
-        $image = Image::make($request->file('image'))->resize(640,480);
+        $image = $request->file('image');
 
         //S3に画像を保存
         $path = Storage::disk('s3')->putFile('/', $image, 'public');
