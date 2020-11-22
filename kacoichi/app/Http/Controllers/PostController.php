@@ -80,13 +80,13 @@ class PostController extends Controller
         
 
         // formから送信されたimgファイルを読み込む
-        $file = $request->file('image');
+        $post->image = $request->file('image');
         // 画像の拡張子を取得
         $extension = $request->file('image')->getClientOriginalExtension();
         // 画像の名前を取得
         $filename = $request->file('image')->getClientOriginalName();
         // 画像をリサイズ
-        $resize_img = Image::make($file)->resize(640, 480)->encode($extension);
+        $resize_img = Image::make($post->image)->resize(640, 480)->encode($extension);
         // s3のuploadsファイルに追加
         $path = Storage::disk('s3')->put('/image/'.$filename,(string)$resize_img, 'public');
         // 画像のURLを参照
