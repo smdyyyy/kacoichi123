@@ -78,6 +78,8 @@ class PostController extends Controller
         //都道府県ID
         $post->prefecture_id = $request->prefecture_id;
 
+        $post->image = $request->image;
+
         
         if ($request['image']) {
             $file = $request->file('image');
