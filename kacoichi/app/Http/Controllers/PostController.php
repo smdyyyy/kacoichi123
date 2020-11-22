@@ -9,6 +9,7 @@ use InterventionImage;
 use App\Post;
 use App\Prefecture;
 use App\Category;
+use Storage;
 
 class PostController extends Controller
 {
