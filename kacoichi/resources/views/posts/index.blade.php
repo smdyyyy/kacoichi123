@@ -18,7 +18,7 @@
             @foreach($posts as $post)
                 <a href="{{ route('posts.show',$post->id) }}">
                     <div class="card new-content content-size">
-                            <img src="{{ $post->image['url'] }}" class="card-img-top">
+                            <img src="{{ Storage::disk('s3')->url('image/'.$post->image) }}" class="card-img-top">
                             <!-- <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top" alt="..."> -->
 <!--                        <img src="{{ asset('storage/image/'.$post->image) }}" class="card-img-top" alt="..." style="height: 12rem;">
  -->                        <a href="{{ route('posts.index',['prefecture_id' => $post->prefecture->id]) }}" class="btn-prefecture btn-primary new-prefecture">{{ $post->prefecture->prefecture_name }}</a>
