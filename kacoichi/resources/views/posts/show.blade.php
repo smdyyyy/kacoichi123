@@ -5,7 +5,7 @@
 <div class="new-wrapper py-4 show-wrapper">
             <div class="new-post pb-4">
             <div class="new-content">
-                <img src="{{ $post->image }}" class="card-img-top">
+                <img src="{{ $post->image }}" class="show-img">
                 <!-- <img src="data:image/png;base64,<?= $post->image ?>" class="show-img" alt="..."> -->
                 <a href="#" class="btn btn-primary show-prefecture">{{ $post->prefecture->prefecture_name }}</a>
                 <div class="content-text content-center">
