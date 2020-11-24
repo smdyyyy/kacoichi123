@@ -89,10 +89,12 @@ class PostController extends Controller
         $resize_image = Image::make($image)->resize(640, null, function($constraint){
             $constraint->aspectRatio();
         })->encode($extension);
+
         //s3のimageに保存
-        Storage::disk('s3')->put('/image/'.$filename,(string)$resize_image, 'public');
+        Storage::disk('s3')->put('/image/'.$filename,$resize_image, 'public');
         //画像URL
         $post->image = Storage::disk('s3')->url('image/'.$filename);
+
 
         //画像をbase64にエンコード
         //$post->image = base64_encode(file_get_contents($request->image->getRealPath()));

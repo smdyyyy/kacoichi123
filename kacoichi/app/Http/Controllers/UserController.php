@@ -74,7 +74,7 @@ class UserController extends Controller
             $constraint->aspectRatio();
         })->encode($extension);
         //s3のimageに追加
-        Storage::disk('s3')->put('/image/'.$filename,(string)$resize_image, 'public');
+        Storage::disk('s3')->put('/image/'.$filename,$resize_image, 'public');
         //画像URL
         $post->image = Storage::disk('s3')->url('image/'.$filename);
 
