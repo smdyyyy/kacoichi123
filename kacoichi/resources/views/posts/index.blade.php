@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @extends('layouts.footer')
-
+<?php
+phpinfo();
+?>
 @section('content')
 <div class="content">
 @if (session('status'))
