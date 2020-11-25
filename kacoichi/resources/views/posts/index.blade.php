@@ -18,13 +18,12 @@
             @foreach($posts as $post)
                 <a href="{{ route('posts.show',$post->id) }}">
                     <div class="card new-content content-size">
-                            <img src="{{ $post->image }}" class="card-img-top">
-                            <!-- <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top" alt="..."> -->
-<!--                        <img src="{{ asset('storage/image/'.$post->image) }}" class="card-img-top" alt="..." style="height: 12rem;">
- -->                        <a href="{{ route('posts.index',['prefecture_id' => $post->prefecture->id]) }}" class="btn-prefecture btn-primary new-prefecture">{{ $post->prefecture->prefecture_name }}</a>
+                        <img src="{{ $post->image }}" class="card-img-top">
+                        <!-- <img src="data:image/png;base64,<?= $post->image ?>" class="card-img-top" alt="..."> -->
+                        <!-- <img src="{{ asset('storage/image/'.$post->image) }}" class="card-img-top" alt="...">　-->
+                        <a href="{{ route('posts.index',['prefecture_id' => $post->prefecture->id]) }}" class="btn-prefecture btn-primary new-prefecture">{{ $post->prefecture->prefecture_name }}</a>
                             <div class="card-body">
-                                <h5 class="card-title"><a href="{{ route('posts.index',['category_id' => $post->category->id]) }}">{{ $post->category->category_name }}:</a>{{ $post->title }}
-                                </h5>
+                                <h5 class="card-title"><a href="{{ route('posts.index',['category_id' => $post->category->id]) }}">{{ $post->category->category_name }}:</a>{{ $post->title }}</h5>
                                 <h5 class="card-title">{{ $post->user->name }}</h5>
                             </div>
                     </div>
