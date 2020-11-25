@@ -81,14 +81,14 @@ class PostController extends Controller
         //画像
         $image = $request->file('image');
         //拡張子取得
-        $extension = $request->file('image')->getClientOriginalExtension();
+        //$extension = $request->file('image')->getClientOriginalExtension();
         //名前取得
         $filename = $request->file('image')->getClientOriginalName();
 
         //リサイズ
         $resize_image = Image::make($image)->resize(640, null, function($constraint){
             $constraint->aspectRatio();
-        })->encode($extension);
+        });//->encode($extension);
 
         //s3のimageに保存
         Storage::disk('s3')->put('/image/'.$filename,$resize_image, 'public');
