@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
 use Illuminate\Support\Facades\Auth;
 use App\Post;
@@ -18,7 +17,6 @@ class PostController extends Controller
      */
     public function index()
     {
-        $q = \Request::query();
         $user = Auth::user();
         //prefecture_idがあれば降順に並び替えて都道府県別に表示
         if(isset($q['prefecture_id'])){
